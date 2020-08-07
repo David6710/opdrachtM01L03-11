@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title> receptformulier</title>
+</head>
+
+<body>
+  <h2>Laat hier je recept achter!</h2>
+  <form name="receptformulier" method="POST" data-netlify="true">
+    <p>
+      <label>naam: <br>
+        <input type="text" name="name" /></label>
+    </p>
+    <p>
+      <label>email: <br>
+        <input type="email" name="email" /></label>
+    </p>
+    <p>
+      <label>telefoonnummer: <br>
+        <input type="tel" name="tel" /></label>
+    </p>
+    <p>
+      <label>leeftijd: <br>
+        <input type="number" min="0" max="100" name="leeftijd" /></label>
+    </p>
+    <p>
+      <label>geboortedatum: <br>
+        <input type="date" name="geboortedatum" /></label>
+    </p>
+    <p>
+      <label>gender: <br>
+        male<input type="radio" name="male" />female<input type="radio" name="female" /></label>
+    </p>
+    <p>
+      <label>favoriete cuisine: <br>
+        <input type="checkbox" name="frans" />frans</label>
+      <input type="checkbox" name="italiaans" />italiaans</label>
+      <input type="checkbox" name="spaans" />spaans</label>
+      <input type="checkbox" name="arabic" />arabisch</label>
+    </p>
+    <p>
+      <label>fovoriete kleur van short<br>
+        <input type="color" name="short" /></label>
+    </p>
+    <p>
+      <label>Biografie<br>
+        <textarea rows="10" cols="50" name="message"></textarea></label>
+    </p>
+    <p>
+      <label>upload je recept: <br>
+        <input type="file" name="recept" /></label>
+    </p>
+    <p>
+      <label>je website: <br>
+        <input type="url" name="website" /></label>
+    </p>
+    <p>
+      <button type="reset">reset</button>
+      <button type="submit">Send</button>
+    </p>
+  </form>
+</body>
+
+</html>
